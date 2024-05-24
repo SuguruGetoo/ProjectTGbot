@@ -6,6 +6,7 @@
 #include <cctype>
 #include <vector> 
 #include <stdio.h>
+#include <locale>
 
 #define SQLITECPP_COMPILE_DLL
 #include <SQLiteCpp/SQLiteCpp.h>
