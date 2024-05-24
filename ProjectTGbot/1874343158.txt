@@ -1,0 +1,4 @@
+Category:Иу
+Amount:Ау
+Comment:Куку
+Data:11.11.1011

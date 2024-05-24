@@ -1,0 +1,40 @@
+Type:Expense
+Category:школа
+Amount:2357
+Comment:захотел
+Data:24.05.24
+Type:Expense
+Category:школа
+Amount:2457
+Comment:захотел очень
+Data:24.05.24
+Type:Income
+Category:школа
+Amount:357
+Comment:захотел очень очень
+Data:24.05.24
+Type:Expense
+Category:школа
+Amount:57
+Comment:захотел сильно очень
+Data:24.05.24
+Type:Expense
+Category:развлечения
+Amount:67
+Comment:хз ошибка молодомти
+Data:23.07.2025
+Type:Expense
+Category:друзья
+Amount:23
+Comment:так получилось
+Data:12.09.22
+Type:Expense
+Category:школа
+Amount:245
+Comment:ну просто могу себе позваолить
+Data:24.12.1998
+Type:Expense
+Category:работа
+Amount:405
+Comment:.
+Data:24.05.2024
