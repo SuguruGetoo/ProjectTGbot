@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BotToken.cpp" />
     <ClCompile Include="CommandsIgnore.cpp" />
     <ClCompile Include="ProjectTGbot.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BotToken.h" />
     <ClInclude Include="CommandsIgnore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

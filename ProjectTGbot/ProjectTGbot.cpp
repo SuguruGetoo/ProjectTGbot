@@ -7,6 +7,7 @@
 #include <vector> 
 #include <stdio.h>
 #include "CommandsIgnore.h"
+#include "BotToken.h"
 
 #define SQLITECPP_COMPILE_DLL
 #include <SQLiteCpp/SQLiteCpp.h>
@@ -47,7 +48,8 @@ int main() {
 
 
     //Запуск бота
-    TgBot::Bot bot("7083052113:AAEWnl15pmnb0Vu3CUAuApRfCWpPkZAbGVU");
+   string BotToken = BotTok();
+    TgBot::Bot bot(BotToken);
     bot.getEvents().onCommand("start", [&bot](TgBot::Message::Ptr message)
         {
         bot.getApi().sendMessage(message->chat->id, u8"Привет! \n Я телеграмм бот Financier_Bot");
@@ -298,21 +300,6 @@ int main() {
             }
         });
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
