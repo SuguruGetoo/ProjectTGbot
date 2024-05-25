@@ -6,7 +6,7 @@
 #include <cctype>
 #include <vector> 
 #include <stdio.h>
-#include <locale>
+#include "CommandsIgnore.h"
 
 #define SQLITECPP_COMPILE_DLL
 #include <SQLiteCpp/SQLiteCpp.h>
@@ -16,52 +16,6 @@ using namespace TgBot;
 
 //создание базы данных SQLite
 SQLite::Database db("example.db3", SQLite::OPEN_READWRITE | SQLite::OPEN_CREATE);
-
-
-
-//отсутствие обработки сообщений при вызове команд
-void NoReactionToCommands(Bot& bot, Message::Ptr message) {
-    if (StringTools::startsWith(message->text, "/start") ||
-        StringTools::startsWith(message->text, "/MyExpense") ||
-        StringTools::startsWith(message->text, "/MyIncome") ||
-        StringTools::startsWith(message->text, "/TryTest") ||
-        StringTools::startsWith(message->text, "/AddExpense") ||
-        StringTools::startsWith(message->text, "/IncomeSortByAmountIncrease") ||
-        StringTools::startsWith(message->text, "/IncomeSortByData") ||
-        StringTools::startsWith(message->text, "/IncomeSortByCategory") ||
-        StringTools::startsWith(message->text, "/ExpenseSortByAmountIncrease") ||
-        StringTools::startsWith(message->text, "/ExpenseSortByData") ||
-        StringTools::startsWith(message->text, "/ExpenseSortByCategory") ||
-        StringTools::startsWith(message->text, "/AddIncome")) {
-        return;
-    }
-}
-
-
-string NoReactionToCommandsForClass(string unreaction) {
-    if ((unreaction == "/start") ||
-        (unreaction == "/MyExpense") ||
-        (unreaction == "/MyIncome") ||
-        (unreaction == "/TryTest") ||
-        (unreaction == "/AddExpense") ||
-        (unreaction == "/IncomeSortByAmountIncrease") ||
-        (unreaction == "/IncomeSortByData") ||
-        (unreaction == "/IncomeSortByCategory") ||
-        (unreaction == "/ExpenseSortByAmountIncrease") ||
-        (unreaction == "/ExpenseSortByData") ||
-        (unreaction == "/ExpenseSortByCategory") ||
-        (unreaction == "/AddIncome")) {
-        return "you can't use any commands";
-    }
-    else {
-        return "all right";
-    }
-}
-
-
-
-
-
 
 struct Myfinance {
     string Type; //расходы или доходы
@@ -684,4 +638,4 @@ int main() {
         printf("error: %s\n", e.what());
     }
     return 0;
-}
+}    

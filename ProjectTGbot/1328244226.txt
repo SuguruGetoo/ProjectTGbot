@@ -31,7 +31,7 @@ Data:12.09.22
 Type:Expense
 Category:школа
 Amount:245
-Comment:ну просто могу себе позваолить
+Comment:ну просто могу себе позволить
 Data:24.12.1998
 Type:Expense
 Category:работа

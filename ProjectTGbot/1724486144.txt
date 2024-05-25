@@ -1,0 +1,10 @@
+Type:Expense
+Category:transport
+Amount:25
+Comment:трамвай
+Data:24.05.2024
+Type:Income
+Categoryработа
+Amount:1000
+Comment:написал бота для телеги
+Data:20.04.2024

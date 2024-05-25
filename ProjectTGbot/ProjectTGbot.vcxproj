@@ -127,7 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CommandsIgnore.cpp" />
     <ClCompile Include="ProjectTGbot.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommandsIgnore.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
